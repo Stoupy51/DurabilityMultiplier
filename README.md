@@ -34,5 +34,6 @@ Function tag is called by the library to inform you an event has happened, and t
 1. Install [LanternLoad](https://github.com/LanternMC/load) in your data pack
 2. Copy the `data/durability_multiplier` folder into your data pack
 3. Merge the contents of `DurabilityMultiplier/data/load/tags/functions/load.json` and your own `data/load/tags/functions/load.json`
+3. Merge the contents of `DurabilityMultiplier/data/minecraft/tags/functions/tick.json` and your own `data/minecraft/tags/functions/tick.json`
 4. Implement the API as described above.
 
