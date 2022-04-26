@@ -26,7 +26,7 @@ Il s'agit d'une librairie intégrée que vous intégrez dans votre Datapack au l
 ## Function Tag
 Le Function tag est un signal appelé par la librairie pour vous informer qu'un événement s'est produit, et vous permet d'apporter des modifications à cet événement.
 * Pour utiliser ce signal, vous devez ajouter une fonction à la liste des tags située dans `data/durability_multiplier/tags/functions/v1/durability_changed.json`.
-* Référez-vous à ce model pour le contenu de la fonction [ici](https://github.com/Stoupy51/DurabilityMultiplier/blob/main/data/durability_multiplier/functions/v1.0/signal_received_template)
+* Référez-vous à ce model pour le contenu de la fonction [ici](https://github.com/Stoupy51/DurabilityMultiplier/blob/main/data/durability_multiplier/functions/v1.0/signal_received_template.mcfunction)
 
 
 
