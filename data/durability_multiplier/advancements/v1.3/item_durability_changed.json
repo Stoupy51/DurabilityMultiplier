@@ -5,6 +5,6 @@
 		}
 	},
 	"rewards": {
-		"function": "durability_multiplier:v1.2/advancements/item_durability_changed"
+		"function": "durability_multiplier:v1.3/advancements/item_durability_changed"
 	}
 }

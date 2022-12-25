@@ -26,7 +26,7 @@ Il s'agit d'une librairie intégrée que vous intégrez dans votre Datapack au l
 ## Function Tag
 Le Function tag est un signal appelé par la librairie pour vous informer qu'un événement s'est produit, et vous permet d'apporter des modifications à cet événement.
 * Pour utiliser ce signal, vous devez ajouter une fonction à la liste des tags située dans `data/durability_multiplier/tags/functions/v1/durability_changed.json`.
-* Référez-vous à ce model pour le contenu de la fonction [ici](https://github.com/Stoupy51/DurabilityMultiplier/blob/main/data/durability_multiplier/functions/v1.1/signal_received_template_fr.mcfunction)
+* Référez-vous à ce model pour le contenu de la fonction [ici](https://github.com/Stoupy51/DurabilityMultiplier/blob/main/data/durability_multiplier/functions/v1.3/signal_received_template_fr.mcfunction)
 ```mcfunction
 ##Doit être appelée par le function tag #durability_multiplier:v1/durability_changed
 ##Définissez le multiplicateur de durabilité comparé à celle vanilla
@@ -72,6 +72,9 @@ Le Function tag est un signal appelé par la librairie pour vous informer qu'un 
 
 
 ## Comment l'utiliser ?
+1. Utilisez un datapack merger : [Mitochrondria Online](https://mito.thenuclearnexus.live/)
+2. Implémentez l'API comme décrit ci-dessus.
+OU
 1. Installez [LanternLoad](https://github.com/LanternMC/load) dans votre data pack
 2. Copiez le dossier `data/durability_multiplier` dans votre data pack
 3. Fusionnez le contenu de `DurabilityMultiplier/data/load/tags/functions/load.json` et votre `data/load/tags/functions/load.json`

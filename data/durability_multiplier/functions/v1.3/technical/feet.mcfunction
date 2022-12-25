@@ -5,10 +5,10 @@ scoreboard players operation #damage durability_multiplier.data -= @s durability
 
 #Select random number between 0 and #multiplier
 summon marker -30000000 14 1610 {Tags:["durability_multiplier.temp"]}
-execute as @e[tag=durability_multiplier.temp] run function durability_multiplier:v1.2/technical/random
+execute as @e[tag=durability_multiplier.temp] run function durability_multiplier:v1.3/technical/random
 
 #Applying durability modifier
-function durability_multiplier:v1.2/technical/durability_modifier
+function durability_multiplier:v1.3/technical/durability_modifier
 item replace block -30000000 14 1610 container.0 from entity @s armor.feet
 execute if score #random durability_multiplier.data matches ..999 run scoreboard players operation @s durability_multiplier.feet -= #damage durability_multiplier.data
 execute store result block -30000000 14 1610 Items[0].tag.Damage int 1 run scoreboard players get @s durability_multiplier.feet
