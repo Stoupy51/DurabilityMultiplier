@@ -73,7 +73,9 @@ Function tag is called by the library to inform you an event has happened, and t
 ## How to use
 1. Use a datapack merger: [Mitochrondria Online](https://mito.thenuclearnexus.live/)
 2. Implement the API as described above.
+
 OR
+
 1. Install [LanternLoad](https://github.com/LanternMC/load) in your data pack
 2. Copy the `data/durability_multiplier` folder into your data pack
 3. Merge the contents of `DurabilityMultiplier/data/load/tags/functions/load.json` and your own `data/load/tags/functions/load.json`
