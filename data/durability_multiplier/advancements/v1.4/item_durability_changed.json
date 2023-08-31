@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:item_durability_changed"
+		}
+	},
+	"requirements": [
+		[
+			"requirement"
+		]
+	],
+	"rewards": {
+		"function": "durability_multiplier:v1.4/advancements/item_durability_changed"
+	}
+}

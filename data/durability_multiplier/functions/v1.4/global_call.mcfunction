@@ -1,5 +1,5 @@
 
-#Storing player inventory
+# Storing player inventory
 data modify storage durability_multiplier:main Inventory set from entity @s Inventory
 data modify storage durability_multiplier:main head set from storage durability_multiplier:main Inventory[{Slot:103b}]
 data modify storage durability_multiplier:main chest set from storage durability_multiplier:main Inventory[{Slot:102b}]
@@ -10,7 +10,7 @@ data modify storage durability_multiplier:main mainhand set from entity @s Selec
 data remove storage durability_multiplier:main Inventory
 setblock -30000000 14 1610 yellow_shulker_box
 
-#Checking Durability Change
+# Checking Durability Change
 execute store result score #head durability_multiplier.data run data get storage durability_multiplier:main head.tag.Damage
 execute store result score #chest durability_multiplier.data run data get storage durability_multiplier:main chest.tag.Damage
 execute store result score #legs durability_multiplier.data run data get storage durability_multiplier:main legs.tag.Damage
@@ -26,12 +26,24 @@ execute store success score #mainhand_valid durability_multiplier.data unless sc
 execute store success score #offhand_valid durability_multiplier.data unless score @s durability_multiplier.offhand = #offhand durability_multiplier.data
 
 
-##Send Durability Change Signal
+## Send Durability Change Signal
 function #durability_multiplier:v1/durability_changed
 
 
-#Reset scores
-scoreboard players reset * durability_multiplier.data
+# Reset scores and other stuff
+scoreboard players reset #head durability_multiplier.data
+scoreboard players reset #chest durability_multiplier.data
+scoreboard players reset #legs durability_multiplier.data
+scoreboard players reset #feet durability_multiplier.data
+scoreboard players reset #mainhand durability_multiplier.data
+scoreboard players reset #offhand durability_multiplier.data
+
+scoreboard players reset #head_valid durability_multiplier.data
+scoreboard players reset #chest_valid durability_multiplier.data
+scoreboard players reset #legs_valid durability_multiplier.data
+scoreboard players reset #feet_valid durability_multiplier.data
+scoreboard players reset #mainhand_valid durability_multiplier.data
+scoreboard players reset #offhand_valid durability_multiplier.data
 
 data remove storage durability_multiplier:main head
 data remove storage durability_multiplier:main chest

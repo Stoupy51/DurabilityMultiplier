@@ -1,5 +1,5 @@
 
-#Objectives initialization
+# Objectives initialization
 scoreboard objectives add durability_multiplier.data dummy
 scoreboard objectives add durability_multiplier.head dummy
 scoreboard objectives add durability_multiplier.chest dummy
@@ -12,8 +12,8 @@ scoreboard players set #1000 durability_multiplier.data 1000
 
 #define storage durability_multiplier:main
 
-#Place a yellow shulker box for inventory manipulation
+# Place a yellow shulker box for inventory manipulation
 execute in minecraft:overworld run forceload add -30000000 1600
 
-schedule function durability_multiplier:v1.3/load_delayed 2s replace
-schedule function durability_multiplier:v1.3/tick 2s replace
+schedule function durability_multiplier:v1.4/load_delayed 2s replace
+schedule function durability_multiplier:v1.4/tick 2s replace

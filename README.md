@@ -26,7 +26,7 @@ This is an embedded library, so you package it inside your datapack as opposed t
 ## Function Tag
 Function tag is called by the library to inform you an event has happened, and to allow you to make changes to the event.
 * To use this call, you must add a function to the tag list located in `data/durability_multiplier/tags/functions/v1/durability_changed.json`.
-* Refer to this template for the content of the function [here](https://github.com/Stoupy51/DurabilityMultiplier/blob/main/data/durability_multiplier/functions/v1.3/signal_received_template.mcfunction).
+* Refer to this template for the content of the function [here](https://github.com/Stoupy51/DurabilityMultiplier/blob/main/data/durability_multiplier/functions/v1.4/signal_received_template.mcfunction).
 ```mcfunction
 ##Should be called by function tag #durability_multiplier:v1/durability_changed
 ##Set the durability multiplier compared to vanilla durability
